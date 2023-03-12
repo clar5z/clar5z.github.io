@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RXJ0H3K1Q5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-RXJ0H3K1Q5');
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="flavicon.png" />
+    <meta
+      name="description"
+      content="Portfólio de Clarisse Ribeiro - Desenvolvedora Web"
+    />
+
     <title>
       Clarisse Ribeiro | Portfólio | Desenvolvedora Web, Mercadológa - Recife -
       PE | Sites, Front-End, Marketing
@@ -15,7 +36,7 @@
       <div class="header">
         <div class="header__img">
           <a href="/">
-            <img src="img/default-user-image.png" alt="Clarisse Ribeiro" />
+            <img src="/img/default-user-image.png" alt="Clarisse Ribeiro" />
           </a>
         </div>
 
@@ -26,23 +47,35 @@
         <nav class="header__social btn-social">
           <ul>
             <li>
-              <a href="https://likedin.com/in/clarisseribeiro" target="_blank">
+              <a
+                href="https://likedin.com/in/clarisseribeiro"
+                target="_blank"
+                aria-label="linkedin"
+              >
                 <svg class="icon icon-fill" width="35" height="35">
-                  <use xlink:href="img/sprit.svg#icon--linkedin" />
+                  <use xlink:href="/img/sprit.svg#icon--linkedin" />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://github.com/clar5z" target="_blank">
+              <a
+                href="https://github.com/clar5z"
+                target="_blank"
+                aria-label="github"
+              >
                 <svg class="icon icon-fill" width="35" height="35">
-                  <use xlink:href="img/sprit.svg#icon--github" />
+                  <use xlink:href="/img/sprit.svg#icon--github" />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://behance.net/clarisseribeiro" target="_blank">
+              <a
+                href="https://behance.net/clarisseribeiro"
+                target="_blank"
+                aria-label="behance"
+              >
                 <svg class="icon icon-fill" width="35" height="35">
-                  <use xlink:href="img/sprit.svg#icon--behance" />
+                  <use xlink:href="/img/sprit.svg#icon--behance" />
                 </svg>
               </a>
             </li>
@@ -53,22 +86,22 @@
             Apaixonada por desenvolvimento web desde 2014, formada em marketing
             em 2019.
           </p>
-          <p><em>Recife - PE</em></p>
+          <p><em>/* Recife - PE */</em></p>
           <p>Tem algum projeto em mente? Vamos conversar:</p>
         </div>
         <div class="header__email">
-          <svg class="icon icon-fill" width="15" height="15">
-            <use xlink:href="img/sprit.svg#icon--email" />
+          <svg class="icon icon-fill" width="15" height="15" aria-label="email">
+            <use xlink:href="/img/sprit.svg#icon--email" />
           </svg>
           <a href="mailto:clarisse.rib@outlook.com">clarisse.rib@outlook.com</a>
         </div>
         <div class="header__lang btn-lang">
           <ul>
             <li class="active">
-              <a href="/">Pt</a>
+              <a href="/">pt-BR</a>
             </li>
             <li>
-              <a href="/en">En</a>
+              <a href="/en">en-US</a>
             </li>
           </ul>
         </div>
@@ -79,19 +112,16 @@
         <div class="main-header__filter">
           <form action="">
             <select name="tipo" id="tipo">
-              <option value="tipo" selected disabled>Tipo</option>
-              <option value="web">Desenvolvimento Web</option>
-              <option value="mkt">Marketing</option>
-              <option value="desing">Design</option>
+              <option value="web" selected disabled>Desenvolvimento Web</option>
             </select>
             <select name="tecnologia" id="tecnologia">
               <option value="tecnologia" selected disabled>Tecnologia</option>
+              <option value="card">Todas</option>
               <option value="html">HTML</option>
-              <option value="css">CSS</option>
+              <option value="css">CSS / SASS</option>
               <option value="js">JS</option>
               <option value="wordpress">WordPress</option>
               <option value="xd">Adobe XD</option>
-              <option value="photoshop">Adobe Photoshop</option>
             </select>
             <input type="submit" value="Filtrar" />
           </form>
@@ -99,158 +129,277 @@
         <div class="main-header__lang btn-lang">
           <ul>
             <li class="active">
-              <a href="/">Pt</a>
+              <a href="/">pt-BR</a>
             </li>
             <li>
-              <a href="/en">En</a>
+              <a href="/en">en-US</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="main__content">
         <div class="cards">
-          <a href="/" class="card">
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
-          <a href="/" class="card">
+          </div>
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
-          <a href="/" class="card">
+          </div>
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
-          <a href="/" class="card">
+          </div>
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
-          <a href="/" class="card">
+          </div>
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
-          <a href="/" class="card">
+          </div>
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
-          <a href="/" class="card">
+          </div>
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
-          <a href="/" class="card">
+          </div>
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
-          <a href="/" class="card">
+          </div>
+          <div
+            href="/portfolio/dreamy-doll.html"
+            class="card"
+            data-card
+            data-html
+            data-css
+            data-js
+            data-xd
+            data-portfolio="dreamy-doll.html"
+          >
             <div class="card__img">
-              <img src="img/mockup.jpg" alt="Mockup" />
+              <img
+                src="/img/portfolio/dreamy-doll-thumb.jpg"
+                alt="Dreamy Doll"
+              />
             </div>
             <div class="card__title">
-              <h3>Trabalho número um</h3>
+              <h3>Site - Dreamy Doll</h3>
             </div>
             <div class="card__tags">
               <ul>
                 <li class="card__tags--html">HTML</li>
-                <li class="card__tags--css">CSS</li>
+                <li class="card__tags--css">CSS / SASS</li>
                 <li class="card__tags--js">JS</li>
+                <li class="card__tags--xd">Adobe XD</li>
               </ul>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </main>
     <footer>
       <small
         ><em
-          >2023 - Feito com ❤️ por <a href="/">Clarisse Ribeiro</a></em
+          ><span class="year">2023</span> - Feito com
+          <span class="icon--heart">❤️</span> por
+          <a href="/">Clarisse Ribeiro</a></em
         ></small
       >
     </footer>
