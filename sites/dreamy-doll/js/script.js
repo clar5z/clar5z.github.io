@@ -2,6 +2,7 @@ const activeClass = 'active';
 const body = document.querySelector('body');
 const menuBtn = document.querySelector('.btn--menu');
 const menuList = document.querySelector('.menu__links');
+const menuListLinks = document.querySelectorAll('.menu__links__list ul li a');
 const menuContainer = document.querySelector('.menu__links__container');
 
 const slides = document.querySelectorAll('.slide__imgs li');
@@ -19,6 +20,13 @@ function menu() {
     menuList.classList.toggle(activeClass);
     menuContainer.classList.toggle(activeClass);
     body.classList.toggle(activeClass);
+  });
+  menuListLinks.forEach((menuListLink) => {
+    menuListLink.addEventListener('click', () => {
+      menuList.classList.remove(activeClass);
+      menuContainer.classList.remove(activeClass);
+      body.classList.remove(activeClass);
+    });
   });
 }
 
