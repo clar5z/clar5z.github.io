@@ -16,8 +16,10 @@ body {
     color: #ddd;
 }
 
+
 main {
-    width: 40%;
+    width: 80%;
+    max-width: 600px;
     text-align: center;
 }
 
