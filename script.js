@@ -1,3 +1,3 @@
 window.onload = function() {
-    window.location.href = "https://clarisseribeiro.site";
+    window.location.href = "https://clarisseribeiro.dev";
 };
